@@ -94,7 +94,7 @@
     return `
     <div class="app-shell">
       <aside class="app-side" aria-label="App navigation">
-        <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>
+        <a class="brand" href="index.html"><img src="assets/logo-mark.png" alt=""><span>AIRE</span></a>
         ${nav.map(link("side-link")).join("")}
         <a class="side-link${cur === "safety" ? " active" : ""}" href="#/safety">${icon("shield")}<span>Safety centre</span></a>
         <div class="side-foot">
@@ -106,7 +106,7 @@
       <div class="app-main">
         <header class="app-top">
           <div class="row" style="gap:10px;flex-wrap:nowrap;min-width:0">
-            <a class="brand mobile-brand" href="#/" aria-label="Aire home"><img src="assets/logo-mark.svg" alt=""></a>
+            <a class="brand mobile-brand" href="#/" aria-label="Aire home"><img src="assets/logo-mark.png" alt=""></a>
             <h1>${h(view.title)}</h1>
           </div>
           <div class="actions">
@@ -150,7 +150,7 @@
 
   /* ---------- auth ---------- */
   function authView(kind, route) {
-    const card = (inner) => `<div class="auth-wrap"><div class="auth-card"><a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>${inner}</div></div><button class="icon-btn" data-theme-toggle style="position:fixed;top:16px;right:16px" aria-label="Toggle theme"></button>`;
+    const card = (inner) => `<div class="auth-wrap"><div class="auth-card"><a class="brand" href="index.html"><img src="assets/logo-mark.png" alt=""><span>AIRE</span></a>${inner}</div></div><button class="icon-btn" data-theme-toggle style="position:fixed;top:16px;right:16px" aria-label="Toggle theme"></button>`;
     if (kind === "demo") {
       return card(`
         <h2 class="center" style="font-size:1.5rem">Try the demo</h2>

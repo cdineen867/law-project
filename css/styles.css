@@ -429,3 +429,8 @@ button.side-link { width: 100%; text-align: left; color: var(--text); }
 .btn.sm svg { width: 16px; height: 16px; }
 .btn { white-space: nowrap; }
 @media (max-width: 420px) { .app-top .actions { gap: 6px; } .app-top .actions .btn.sm { padding: 6px 10px; font-size: .8rem; } }
+/* logo: the full logo always sits on a light plate so the purple wordmark reads in dark mode */
+.hero-art .logo-card, .logo-plate { background: #fffdf8; }
+.hero-art .logo-card p.muted { color: #6d5f80; }
+.brand img { width: 54px; }
+.auth-card .brand img { width: 64px; }
