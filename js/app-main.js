@@ -171,7 +171,7 @@
         let payment = me.payment;
         if (!d.useSaved) { payment = window.AireParent.readCard(d); if (d.saveCard) { me.payment = payment; } }
         const b = A.createBooking({ parentId: me.id, sitterId: s.id, date: d.date, start: d.start, end: d.end, children: kids, notes: A.screenText(d.notes || "").clean, uber: !!d.uber, payment });
-        toast(`Request sent to ${A.publicName(s)}.`, "ok");
+        toast(`Request sent to ${A.publicName(s).replace(/\.$/, "")}.`, "ok");
         UI.scheduleAutoAccept(b);
         go("#/booking/" + b.id);
       } catch (x) { err("book-err", x.message); }
