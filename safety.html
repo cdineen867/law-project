@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aire · Safety &amp; Privacy</title>
+  <meta name="description" content="How Aire protects children, parents and sitters: vetting, data minimisation, GDPR and safeguarding.">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <div class="rainbow-bar"></div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="index.html#how">How it works</a>
+        <a href="safety.html" aria-current="page">Safety &amp; privacy</a>
+        <a href="project.html">The project</a>
+        <a class="btn pink sm" href="app.html">Open the app</a>
+      </nav>
+      <div class="row">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="icon-btn nav-toggle" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:24px">
+      <div class="container" style="display:block">
+        <span class="pill blue">Data protection &amp; safeguarding</span>
+        <h1 style="margin-top:14px;max-width:16em">Safety and privacy aren't add-ons. <span class="gradient-text">They are the product.</span></h1>
+        <p class="lead">To match families with sitters, Aire handles some of the most sensitive information a platform can hold: where children live, who looks after them and when, background-check records and payment details. A single breach or misuse could put a child at risk, so every design choice is tested against our promise of safety, convenience and trust.</p>
+        <div class="toc">
+          <a class="pill" href="#collect">What we collect</a>
+          <a class="pill blue" href="#vetting">Vetting</a>
+          <a class="pill pink" href="#groups">Safeguards by group</a>
+          <a class="pill yellow" href="#tech">Technical security</a>
+          <a class="pill" href="#retention">Retention</a>
+          <a class="pill blue" href="#law">Legal framework</a>
+          <a class="pill pink" href="#incident">Incident response</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="principles" style="padding-top:24px">
+      <div class="container">
+        <div class="grid c3">
+          <div class="card accent-pink"><h3>Privacy by design</h3><p class="muted">Safety settings are on by default. Users never have to hunt for them.</p></div>
+          <div class="card accent-blue"><h3>Minimum data, minimum time</h3><p class="muted">If we don't need it to run a booking, we don't collect it. Every data type is deleted automatically once its retention period ends.</p></div>
+          <div class="card accent-purple"><h3>Need to know</h3><p class="muted">People only see the data needed for a booking they are part of.</p></div>
+          <div class="card accent-yellow"><h3>Reveal late</h3><p class="muted">A family's full home address is released only once a booking is confirmed, shortly before it starts.</p></div>
+          <div class="card accent-pink"><h3>Never sold</h3><p class="muted">We never sell data. Children's data is never used for profiling or advertising.</p></div>
+          <div class="card accent-blue"><h3>Plain language</h3><p class="muted">Privacy notices are short, written for parents and sitters, and available in the app.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="collect">
+      <div class="container">
+        <h2>What we collect and why</h2>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Group</th><th>Data collected</th><th>Purpose</th><th>Sensitivity</th></tr></thead>
+            <tbody>
+              <tr><td><b>Parents</b></td><td>Name, email, phone, home address (area first, full address only after booking), payment token, verification status</td><td>Account, booking, payment, trust</td><td><span class="status st-pending">High</span></td></tr>
+              <tr><td><b>Children</b></td><td>First name or nickname, age bracket, optional care notes (e.g. allergies)</td><td>Matching sitters by age and giving the sitter safe care information</td><td><span class="status st-active">Very high</span></td></tr>
+              <tr><td><b>Sitters</b></td><td>Name, photo, date of birth, contact details, rate, availability, vetting and certificate status, ratings, payout details</td><td>Profile, verification, booking, payment</td><td><span class="status st-pending">High</span></td></tr>
+              <tr><td><b>Everyone</b></td><td>Messages, booking history, device and log data, ratings and reports</td><td>Service delivery, safety, dispute resolution</td><td><span class="status st-confirmed">Medium–high</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:14px"><b>What we deliberately do not collect:</b> children's surnames, photos or school details, precise live location tracking, contact lists, or any data for advertising.</p>
+      </div>
+    </section>
+
+    <section class="block" id="vetting">
+      <div class="container">
+        <div class="grid c2" style="align-items:start">
+          <div>
+            <h2>Verification &amp; vetting workflow</h2>
+            <p class="muted">Garda vetting is carried out only for registered organisations through the National Vetting Bureau. Aire will either register as a relevant organisation (Option A) or partner with an already-registered vetting provider (Option B).</p>
+            <div class="steps stack">
+              <div class="step"><b>Account</b><p class="muted small">The sitter creates an account and verifies their email and phone.</p></div>
+              <div class="step"><b>Identity</b><p class="muted small">The sitter uploads photo ID, which is matched to a live selfie.</p></div>
+              <div class="step"><b>Garda vetting</b><p class="muted small">The sitter completes the vetting application through our approved route.</p></div>
+              <div class="step"><b>Certificates</b><p class="muted small">Irish Red Cross first aid and Children First certificates are checked by an admin to make sure they're valid and in date.</p></div>
+              <div class="step"><b>Go live</b><p class="muted small">The profile becomes searchable only once every check passes. Badges are removed automatically when anything expires.</p></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>What parents see</h3>
+            <p class="muted">Badges show status only, never the underlying documents. We store the verification outcome and date rather than the full disclosure wherever the law allows.</p>
+            <div class="badges" style="margin:14px 0">
+              <span class="badge garda">✓ Garda vetted</span><span class="badge cf">✓ Children First</span><span class="badge fa">✓ First aid</span><span class="badge id">✓ ID verified</span>
+            </div>
+            <hr class="soft">
+            <h3>Minimum age</h3>
+            <p class="muted">Sitters must be 16 or older. Sitters aged 16–17 need a parent or guardian's consent for vetting and use of the app, which reflects Ireland's digital age of consent of 16. Sitters aged 18 and over can take bookings on their own.</p>
+            <hr class="soft">
+            <h3>Parents are verified too</h3>
+            <p class="muted">Parents verify their identity and phone number, so sitters know who they are visiting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="groups">
+      <div class="container">
+        <h2>Safeguards by user group</h2>
+        <div class="grid c3">
+          <div class="card accent-yellow">
+            <h3>Children</h3>
+            <ul class="ticks yellow small">
+              <li>No child accounts. Children appear only as a nickname and age bracket in a booking.</li>
+              <li>No photos, surnames, schools or birthdays are stored.</li>
+              <li>Care notes are seen only by the confirmed sitter and deleted 30 days after the booking.</li>
+              <li>No child information is ever passed to Uber.</li>
+              <li>A one-tap emergency button, a report button and a named safeguarding lead.</li>
+              <li>A sitter can be suspended immediately on a credible report.</li>
+            </ul>
+          </div>
+          <div class="card accent-pink">
+            <h3>Parents</h3>
+            <ul class="ticks small">
+              <li>Profiles show only the approximate area.</li>
+              <li>Messages stay in the app, so no numbers are exchanged before booking.</li>
+              <li>Tokenised Stripe payments. Aire never sees full card numbers.</li>
+              <li>Routines and booking times are visible only to the booked sitter.</li>
+              <li>Optional two-factor authentication and alerts for new devices.</li>
+              <li>View, download and delete your data in the app.</li>
+            </ul>
+          </div>
+          <div class="card accent-blue">
+            <h3>Sitters</h3>
+            <ul class="ticks blue small">
+              <li>ID and vetting documents are kept in a separate locked store.</li>
+              <li>A sitter's home address and phone number are never shown to parents.</li>
+              <li>Sitters see the family's verified status first and can decline with no penalty.</li>
+              <li>Uber link, trusted-contact sharing, and report and block buttons.</li>
+              <li>Reviews are moderated, and abusive reviews are removed.</li>
+              <li>Fees are shown clearly before a booking is accepted.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="tech">
+      <div class="container">
+        <h2>Technical security measures</h2>
+        <div class="grid c4">
+          <div class="card"><h3>Encryption</h3><p class="muted small">TLS in transit. Strong encryption at rest, with extra encryption for ID and vetting documents.</p></div>
+          <div class="card"><h3>EU hosting</h3><p class="muted small">Hosted in an EU-based cloud region under a signed data processing agreement.</p></div>
+          <div class="card"><h3>Access control</h3><p class="muted small">Role-based access with MFA. Every admin access to personal data is logged and reviewed.</p></div>
+          <div class="card"><h3>Pseudonymisation</h3><p class="muted small">Internal analytics use user IDs, never names or addresses.</p></div>
+          <div class="card"><h3>Secure development</h3><p class="muted small">Code review, dependency scanning and no secrets in code.</p></div>
+          <div class="card"><h3>Testing</h3><p class="muted small">A penetration test before launch and at least once a year after that.</p></div>
+          <div class="card"><h3>Backups</h3><p class="muted small">Encrypted, tested backups with a documented restore process.</p></div>
+          <div class="card"><h3>Anti-bypass</h3><p class="muted small">Message filters flag phone numbers and requests to pay off the app.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="retention">
+      <div class="container">
+        <div class="grid c2" style="align-items:start">
+          <div>
+            <h2>Retention &amp; deletion</h2>
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Data</th><th>Proposed retention</th></tr></thead>
+                <tbody>
+                  <tr><td>Child care notes</td><td>Deleted 30 days after the booking ends</td></tr>
+                  <tr><td>Messages</td><td>12 months, for safety and disputes</td></tr>
+                  <tr><td>Booking records</td><td>As required by tax and accounting law</td></tr>
+                  <tr><td>Vetting &amp; certificates</td><td>While the sitter is active, plus a limited period for legal defence</td></tr>
+                  <tr><td>ID documents &amp; selfies</td><td>Deleted soon after verification; only the result is kept</td></tr>
+                  <tr><td>Account data</td><td>Deleted on request, subject to legal retention duties</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="muted small" style="margin-top:10px">Retention periods are proposals and will be confirmed in the DPIA.</p>
+          </div>
+          <div>
+            <h2>Third parties</h2>
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Partner</th><th>Safeguard</th></tr></thead>
+                <tbody>
+                  <tr><td><b>Stripe</b>: payments</td><td>PCI DSS compliant; Aire holds no card data</td></tr>
+                  <tr><td><b>Uber</b>: sitter transport</td><td>Pick-up and drop-off only, with consent; no child data</td></tr>
+                  <tr><td><b>Vetting &amp; training providers</b></td><td>Written agreements; outcome data only where possible</td></tr>
+                  <tr><td><b>Insurers</b></td><td>Only the data needed for a claim</td></tr>
+                  <tr><td><b>Cloud &amp; email</b></td><td>EU hosting and processor agreements</td></tr>
+                  <tr><td><b>Universities &amp; childcare orgs</b></td><td>Recruitment partnership only; no personal data shared</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="law">
+      <div class="container">
+        <h2>Legal &amp; regulatory framework</h2>
+        <div class="grid c3">
+          <div class="card accent-purple"><h3>GDPR &amp; Data Protection Act 2018</h3><p class="muted small">A lawful basis for every use of data, transparency, the rights of access, correction and deletion, and breach notification to the Data Protection Commission within 72 hours.</p></div>
+          <div class="card accent-yellow"><h3>Children's data</h3><p class="muted small">Treated as high risk. We follow the DPC's child-focused guidance and complete a DPIA before launch.</p></div>
+          <div class="card accent-pink"><h3>Special category &amp; criminal data</h3><p class="muted small">Health care notes and vetting outcomes are kept to a minimum, with restricted access and a clear legal basis for each.</p></div>
+          <div class="card accent-blue"><h3>National Vetting Bureau Acts 2012–2016</h3><p class="muted small">The biggest compliance question for the app is which vetting route to use: register directly or partner with a registered organisation.</p></div>
+          <div class="card accent-purple"><h3>Children First Act 2015</h3><p class="muted small">Child-safeguarding practices and a clear route to report concerns to Tusla and An Garda Síochána.</p></div>
+          <div class="card accent-yellow"><h3>Payments &amp; digital consent</h3><p class="muted small">Card data is handled by PCI DSS certified Stripe. Ireland's digital age of consent is 16.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="incident">
+      <div class="container">
+        <div class="grid c2">
+          <div class="card">
+            <h3>If personal data is lost or exposed</h3>
+            <div class="steps stack">
+              <div class="step"><b>Contain</b><p class="muted small">Revoke access and isolate the affected systems.</p></div>
+              <div class="step"><b>Assess</b><p class="muted small">Work out which data and users are affected. Children's data and addresses come first.</p></div>
+              <div class="step"><b>Notify</b><p class="muted small">Tell the Data Protection Commission within 72 hours where there is a risk to people.</p></div>
+              <div class="step"><b>Inform &amp; fix</b><p class="muted small">Tell affected users plainly, record what happened and fix the cause.</p></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Safeguarding incidents</h3>
+            <div class="steps stack">
+              <div class="step"><b>Child safe first</b><p class="muted small">Contact emergency services if needed.</p></div>
+              <div class="step"><b>Suspend</b><p class="muted small">Suspend the accounts involved while the report is reviewed.</p></div>
+              <div class="step"><b>Report</b><p class="muted small">Report to Tusla and An Garda Síochána through the safeguarding lead.</p></div>
+              <div class="step"><b>Preserve &amp; review</b><p class="muted small">Keep records secure for investigators and remove accounts permanently if needed.</p></div>
+            </div>
+          </div>
+        </div>
+        <p class="muted small" style="margin-top:20px">Note: this is a project planning summary written by students and is not legal advice. Legal references should be confirmed with a qualified solicitor and the Data Protection Commission before launch.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>
+      <nav><a href="index.html">Home</a><a href="project.html">The project</a><a href="app.html">App</a></nav>
+      <p class="muted small" style="margin:0">A student project prototype. Not a live service and not legal advice.</p>
+    </div>
+  </footer>
+</body>
+</html>

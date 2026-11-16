@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aire · Trusted Babysitters</title>
+  <meta name="description" content="Aire connects parents in Ireland with Garda vetted, Children First certified and first aid trained local babysitters, found in minutes.">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
+</head>
+<body>
+  <div class="rainbow-bar"></div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="index.html#how">How it works</a>
+        <a href="safety.html">Safety &amp; privacy</a>
+        <a href="project.html">The project</a>
+        <a class="btn pink sm" href="app.html">Open the app</a>
+      </nav>
+      <div class="row">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="icon-btn nav-toggle" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="pill pink">Aire: Irish for <em>care &amp; attention</em></span>
+          <h1 style="margin-top:14px">Babysitters you can trust, <span class="gradient-text">found in minutes.</span></h1>
+          <p class="lead">Aire links parents with local babysitters who are Garda vetted, Children First certified and first aid trained. Book now or schedule ahead, pay in the app, and book the sitter a safe ride home.</p>
+          <div class="hero-cta">
+            <a class="btn" href="app.html#/signup?role=parent">I'm a parent</a>
+            <a class="btn blue" href="app.html#/signup?role=sitter">I'm a babysitter</a>
+            <a class="btn ghost" href="app.html#/demo">Try the demo</a>
+          </div>
+          <div class="row" style="margin-top:22px">
+            <span class="pill blue">Garda vetted</span>
+            <span class="pill">Children First</span>
+            <span class="pill pink">First aid trained</span>
+            <span class="pill yellow">Rated by parents</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+          <div class="logo-card">
+            <img src="assets/logo-mark.svg" alt="">
+            <div class="word">AIRE</div>
+            <p class="muted" style="margin:6px 0 0;font-weight:700">Safety · Convenience · Trust</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="problem">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill yellow">The problem</span>
+          <h2 style="margin-top:10px">Finding a sitter shouldn't mean asking a Facebook group.</h2>
+          <p class="muted">Irish parents pay some of the highest childcare costs in the EU. When the crèche is closed, a regular sitter cancels, or the family is new to an area, most parents fall back on word of mouth and listing sites that offer little real safety or booking support.</p>
+        </div>
+        <div class="grid c4">
+          <div class="stat card"><b>€771</b><span class="muted">monthly full-time fees for under-3s (2019 estimate)</span></div>
+          <div class="stat card"><b>€13.69</b><span class="muted">average hourly babysitting rate in 2026</span></div>
+          <div class="stat card"><b>€14.33</b><span class="muted">average hourly rate in Dublin (Cork: €13.49)</span></div>
+          <div class="stat card"><b>91.9%</b><span class="muted">of US households with children had a working parent in 2023</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="how">
+      <div class="container">
+        <div class="section-head center center-text" style="text-align:center">
+          <span class="pill blue">How it works</span>
+          <h2 style="margin-top:10px">Like ordering a ride, but for childcare.</h2>
+        </div>
+        <div class="grid c2">
+          <div class="card accent-pink">
+            <h3>For parents</h3>
+            <div class="steps stack">
+              <div class="step"><b>Tell us when.</b><p class="muted small">Pick a date, time, the number of children and their age brackets. Book for tonight or schedule ahead.</p></div>
+              <div class="step"><b>Get matched.</b><p class="muted small">See nearby vetted sitters, their badges, ratings and a clear price before you book.</p></div>
+              <div class="step"><b>Book &amp; pay safely.</b><p class="muted small">Pay through Stripe in the app. Your full address is only shared once the booking is confirmed.</p></div>
+              <div class="step"><b>Rate &amp; rebook.</b><p class="muted small">Review the sitter afterwards, save favourites and rebook in one tap.</p></div>
+            </div>
+          </div>
+          <div class="card accent-blue">
+            <h3>For babysitters</h3>
+            <div class="steps stack">
+              <div class="step"><b>Get verified.</b><p class="muted small">Check your ID and complete Garda vetting, Children First and Irish Red Cross first aid through the platform.</p></div>
+              <div class="step"><b>Set your rates.</b><p class="muted small">Choose an hourly rate, an extra charge per child and a surcharge for babies, then set when you're available.</p></div>
+              <div class="step"><b>Accept the jobs you want.</b><p class="muted small">See the family's verified status first and decline any booking with no penalty.</p></div>
+              <div class="step"><b>Get paid &amp; get home safe.</b><p class="muted small">Payouts go to your own account, and the Uber link gets you home.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="pill">Why Aire</span>
+          <h2 style="margin-top:10px">Safety is the product, not an add-on.</h2>
+        </div>
+        <div class="grid c3">
+          <div class="card"><div class="feature-icon fi-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>Vetted both ways</h3><p class="muted">Every sitter is Garda vetted, Children First certified and first aid trained. Parents are verified too, so sitters know who they are visiting.</p></div>
+          <div class="card"><div class="feature-icon fi-pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>On demand or in advance</h3><p class="muted">Find a sitter for tonight in minutes, or book one weeks ahead, the same way you'd schedule a ride.</p></div>
+          <div class="card"><div class="feature-icon fi-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="7" rx="2"/><path d="M5 11l2-5h10l2 5M7 18v2M17 18v2"/></svg></div><h3>Safe ride home</h3><p class="muted">Book an Uber for the sitter from the app. Only the pick-up and drop-off details are shared, never anything about your children.</p></div>
+          <div class="card"><div class="feature-icon fi-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.3l-6.2 3.6 1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7z"/></svg></div><h3>Ratings that mean something</h3><p class="muted">Only parents who have booked a sitter can review them, and reviews are moderated. Sitters build a reputation that goes with them.</p></div>
+          <div class="card"><div class="feature-icon fi-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Private messaging</h3><p class="muted">Chat stays inside the app. Phone numbers and requests to pay off the app are flagged to protect both sides.</p></div>
+          <div class="card"><div class="feature-icon fi-pink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div><h3>One-tap emergency</h3><p class="muted">During a booking, an emergency button calls 112/999 and alerts the parent. You can also report a concern straight to our safeguarding lead.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="pricing">
+      <div class="container">
+        <div class="section-head center" style="text-align:center">
+          <span class="pill yellow">Simple pricing</span>
+          <h2 style="margin-top:10px">Free to join. Pay only when you book.</h2>
+        </div>
+        <div class="grid c2">
+          <div class="card accent-purple">
+            <h3>Parents: Free</h3>
+            <p class="muted">Search, message and save favourites for free. Each booking adds a <b>10% service fee</b> at checkout, which covers vetting, insurance and secure payments.</p>
+            <ul class="ticks purple"><li>Clear total before you book</li><li>Card details handled by Stripe</li><li>Free cancellation up to 24 hours before</li></ul>
+          </div>
+          <div class="card accent-yellow">
+            <h3>Babysitters: €4.99 a month</h3>
+            <p class="muted">Keep 100% of your rate. A small monthly subscription keeps your verified profile live and searchable.</p>
+            <ul class="ticks yellow"><li>Set your rate per hour, per child and per age bracket</li><li>Payouts straight to your account</li><li>Ratings that build your reputation</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="faq">
+      <div class="container" style="max-width:800px">
+        <h2 class="center">Questions</h2>
+        <details class="faq"><summary>What does “Aire” mean?</summary><p>Aire (pronounced “ar-eh”) is the Irish word for care or attention, which is exactly what we want every family and every sitter to get.</p></details>
+        <details class="faq"><summary>How are babysitters vetted?</summary><p>Sitters verify their ID with a live selfie, complete Garda vetting through a registered route, and upload Irish Red Cross first aid and Children First certificates. An admin checks each one, and a badge is removed automatically when anything expires.</p></details>
+        <details class="faq"><summary>What information do you hold about my children?</summary><p>Only a first name or nickname, an age bracket and optional care notes such as allergies. Care notes are visible only to the booked sitter and are deleted 30 days after the booking. We never store photos, surnames or school details of children.</p></details>
+        <details class="faq"><summary>How old do sitters have to be?</summary><p>Sitters must be at least 16, and 16–17 year olds need a parent or guardian's consent. Sitters aged 18 or over can take bookings on their own.</p></details>
+        <details class="faq"><summary>Is this a real service?</summary><p>Aire is a student project prototype. The app is a working demo: everything you enter is stored only in your own browser and no real payments, vetting or Uber bookings take place.</p></details>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <div class="cta-band">
+          <div><h2>Ready to find your sitter?</h2><p style="margin:6px 0 0;opacity:.9">Try the working app. No sign-up needed for the demo.</p></div>
+          <div class="row"><a class="btn yellow" href="app.html#/demo">Launch the demo</a><a class="btn light" href="app.html#/signup">Create an account</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>AIRE</span></a>
+      <nav><a href="safety.html">Safety &amp; privacy</a><a href="project.html">The project</a><a href="app.html">App</a></nav>
+      <p class="muted small" style="margin:0">A student project prototype. Not a live service and not legal advice.</p>
+    </div>
+  </footer>
+</body>
+</html>
