@@ -39,7 +39,12 @@ Demo logins use the password `demo123`: `sally@demo.ie` (parent) and `ellie@demo
 - Sitters must be 16 or over, and 16–17 year olds need a guardian's consent.
 - An emergency button appears during a live booking, plus a Safety centre for reporting concerns.
 
-Data is saved in the browser's `localStorage` only. Nothing is sent to a server, and no real payments, vetting checks or Uber bookings happen. "Reset demo data" is on the Profile page.
+### Shared demo data
+Every visitor starts from the same data, stored in [`data/demo-data.json`](data/demo-data.json): families, sitters, bookings, reviews, messages and notifications.
+- Dates in the file are relative to its `anchor` day and are moved to the visitor's today when they open the app, so upcoming bookings never go out of date.
+- To change the data for everyone, edit the file, increase `dataVersion` by 1, then commit and push. Every visitor is reset to the new data the next time they open the app.
+- Anything a visitor does after that (bookings, chats, profile edits) is saved only in their own browser's `localStorage`. "Reset demo data" on the Profile page goes back to the shared data.
+- Nothing is sent to a server, and no real payments, vetting checks or Uber bookings happen.
 
 ## Run locally
 ```bash

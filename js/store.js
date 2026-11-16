@@ -111,12 +111,12 @@
     ];
 
     const notifications = [
-      { id: uid("n"), userId: "p_odonnell", icon: "check", text: `Sitter found: Sarah K. can mind your children on ${fmtDate(up.date)}, ${fmtTime(up.start)}.`, link: "#/booking/" + up.id, read: false, at: new Date(Date.now() - 20 * 3600e3).toISOString() },
+      { id: uid("n"), userId: "p_odonnell", icon: "check", text: `Sitter found: Sarah K. can mind your children on {{${up.date}}}, ${fmtTime(up.start)}.`, link: "#/booking/" + up.id, read: false, at: new Date(Date.now() - 20 * 3600e3).toISOString() },
       { id: uid("n"), userId: "p_odonnell", icon: "star", text: "How did Sarah K. get on? Leave a rating for your last booking.", link: "#/booking/b_review", read: false, at: new Date(Date.now() - 30 * 3600e3).toISOString() },
-      { id: uid("n"), userId: "s_ellie", icon: "bell", text: "New request: The Murphy family, " + fmtDate(dayISO(3)) + ", 7–11 pm.", link: "#/booking/b_request", read: false, at: new Date(Date.now() - 18 * 60e3).toISOString() },
+      { id: uid("n"), userId: "s_ellie", icon: "bell", text: "New request: The Murphy family, {{" + dayISO(3) + "}}, 7–11 pm.", link: "#/booking/b_request", read: false, at: new Date(Date.now() - 18 * 60e3).toISOString() },
     ];
 
-    return { version: 1, users, bookings, reviews, messages, notifications, reports: [], session: null, seededAt: new Date().toISOString() };
+    return { version: 1, dataVersion: 0, anchor: dayISO(0), users, bookings, reviews, messages, notifications, reports: [], session: null, seededAt: new Date().toISOString() };
   }
 
   /* ---------- formatting (also used by UI) ---------- */
@@ -153,17 +153,64 @@
     return { hours, rate: sitter.rate, base: round2(base), extra: round2(extra), infant: round2(infant), subtotal, fee, ride, total: round2(subtotal + fee + ride), hourly: round2(subtotal / hours) };
   }
 
-  /* ---------- persistence ---------- */
+  /* ---------- persistence ----------
+     The shared demo data lives in data/demo-data.json in the repo, so every
+     visitor starts from exactly the same data. Its dates are stored relative to
+     its "anchor" day and shifted to today on load, so it never goes stale.
+     Bumping "dataVersion" in that file resets every visitor to the new data. */
+  const SHARED_URL = "data/demo-data.json";
   let db = null;
-  function load() {
+  let shared = null; // the repo's demo data, as fetched
+
+  const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+  const STAMP_RE = /^\d{4}-\d{2}-\d{2}T[\d:.]+Z$/;
+  function shiftDates(value, days) {
+    if (typeof value === "string") {
+      if (DATE_RE.test(value)) return iso(addDays(at(value, "12:00"), days));
+      if (STAMP_RE.test(value)) return new Date(new Date(value).getTime() + days * 864e5).toISOString();
+      return value.replace(/\{\{(\d{4}-\d{2}-\d{2})\}\}/g, (_, d) => "{{" + iso(addDays(at(d, "12:00"), days)) + "}}");
+    }
+    if (Array.isArray(value)) return value.map((v) => shiftDates(v, days));
+    if (value && typeof value === "object") {
+      const out = {};
+      for (const k of Object.keys(value)) out[DATE_RE.test(k) ? iso(addDays(at(k, "12:00"), days)) : k] = shiftDates(value[k], days);
+      return out;
+    }
+    return value;
+  }
+  function fillTokens(data) {
+    data.notifications.forEach((n) => { n.text = n.text.replace(/\{\{(\d{4}-\d{2}-\d{2})\}\}/g, (_, d) => fmtDate(d)); });
+    return data;
+  }
+  /* A fresh copy of the shared data, moved so that its anchor day is today. */
+  function hydrate(src) {
+    const days = Math.round((at(dayISO(0), "12:00") - at(src.anchor, "12:00")) / 864e5);
+    const data = shiftDates(JSON.parse(JSON.stringify(src)), days);
+    data.anchor = dayISO(0);
+    data.session = null;
+    return fillTokens(data);
+  }
+  function fresh() { return shared ? hydrate(shared) : fillTokens(seed()); }
+
+  async function load() {
+    try {
+      const res = await fetch(SHARED_URL, { cache: "no-store" });
+      if (res.ok) shared = await res.json();
+    } catch (e) { /* offline or opened from file:// — fall back to the built-in seed */ }
     const raw = safeGet();
     if (raw) { try { db = JSON.parse(raw); } catch (e) { db = null; } }
-    if (!db || db.version !== 1) { db = seed(); save(); }
+    const sharedVersion = shared ? shared.dataVersion : 0;
+    if (!db || db.version !== 1 || (db.dataVersion || 0) !== sharedVersion) {
+      const session = db && db.session;
+      db = fresh();
+      if (session && db.users.some((u) => u.id === session.userId)) db.session = session;
+      save();
+    }
     housekeeping();
     return db;
   }
   function save() { safeSet(JSON.stringify(db)); }
-  function reset() { const s = db && db.session; db = seed(); db.session = null; save(); return s; }
+  function reset() { db = fresh(); save(); }
 
   /* ---------- queries ---------- */
   const user = (id) => db.users.find((u) => u.id === id);
@@ -424,7 +471,7 @@
 
   window.Aire = {
     get db() { return db; },
-    load, save, reset, seedFresh: seed,
+    load, save, reset, seedFresh: seed, fillTokens,
     constants: { SERVICE_FEE, SITTER_SUBSCRIPTION, RIDE_ESTIMATE, ADDRESS_REVEAL_HOURS, CARE_NOTE_RETENTION_DAYS, AGE_BRACKETS, CHECKS },
     util: { uid, iso, dayISO, addDays, at, fmtDate, fmtTime, euro, hoursBetween, round2, hashStr },
     user, me, rating, publicName, initials, bookingStart, bookingEnd, bookingState, checkStatus, isVerified, isSearchable, expiringSoon,

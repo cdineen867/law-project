@@ -237,11 +237,13 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
   /* ---------- start ---------- */
-  A.load();
+  A.load().then(start);
+  function start() {
   // Seeded sitters accept any requests that were left pending when the page was closed
   A.db.bookings.filter((b) => b.status === "pending").forEach(UI.scheduleAutoAccept);
   window.addEventListener("hashchange", () => { closeModal(); render(); });
   // Re-check time-based state (bookings starting/finishing) every minute
   setInterval(() => { const before = JSON.stringify(A.db.bookings.map((b) => b.status)); A.housekeeping(); if (JSON.stringify(A.db.bookings.map((b) => b.status)) !== before) render(); }, 60e3);
   render();
+  }
 })();
