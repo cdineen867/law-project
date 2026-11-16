@@ -423,3 +423,9 @@ hr.soft { border: 0; border-top: 1px solid var(--border); margin: 16px 0; }
 .searching { display: flex; align-items: center; gap: 10px; color: var(--muted); font-weight: 700; }
 .spinner { width: 20px; height: 20px; border-radius: 50%; border: 3px solid var(--purple-soft); border-top-color: var(--pink); animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
+@media (min-width: 821px) { .mobile-only-switch { display: none !important; } }
+button.side-link { width: 100%; text-align: left; color: var(--text); }
+.btn svg, .chip svg, .sos svg { width: 18px; height: 18px; flex: none; }
+.btn.sm svg { width: 16px; height: 16px; }
+.btn { white-space: nowrap; }
+@media (max-width: 420px) { .app-top .actions { gap: 6px; } .app-top .actions .btn.sm { padding: 6px 10px; font-size: .8rem; } }
