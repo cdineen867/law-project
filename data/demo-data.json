@@ -1,0 +1,1306 @@
+{
+  "_about": "Shared Aire demo data. Every visitor starts from this. Dates are relative to \"anchor\" and shifted to the visitor's today. Increase dataVersion after editing to reset all visitors to this data. Demo password for every account: demo123.",
+  "version": 1,
+  "dataVersion": 1,
+  "anchor": "2026-11-16",
+  "users": [
+    {
+      "role": "parent",
+      "password": "h1cv3cdf",
+      "phone": "+353 87 000 0001",
+      "verified": {
+        "id": true,
+        "phone": true
+      },
+      "twoFactor": false,
+      "favourites": [
+        "s_sarah"
+      ],
+      "ratingSum": 57.6,
+      "ratingCount": 12,
+      "children": [
+        {
+          "id": "c1",
+          "nickname": "Ben",
+          "age": "2–4",
+          "notes": ""
+        },
+        {
+          "id": "c2",
+          "nickname": "Lucy",
+          "age": "5–8",
+          "notes": ""
+        }
+      ],
+      "payment": {
+        "brand": "Visa",
+        "last4": "4242",
+        "token": "tok_demo"
+      },
+      "createdAt": "2026-07-19",
+      "id": "p_odonnell",
+      "name": "The O'Donnell family",
+      "contact": "Sally O'Donnell",
+      "email": "sally@demo.ie",
+      "about": "Sally and Mike, both 32. We live in Cork City and are looking for friendly, reliable sitters for evenings and weekends.",
+      "city": "Cork",
+      "area": "Cork City",
+      "address": "14 Wellington Road, St Luke's, Cork T23 A1B2"
+    },
+    {
+      "role": "parent",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "verified": {
+        "id": true,
+        "phone": true
+      },
+      "twoFactor": false,
+      "favourites": [],
+      "ratingSum": 57.6,
+      "ratingCount": 12,
+      "children": [
+        {
+          "id": "c3",
+          "nickname": "Tom",
+          "age": "2–4"
+        },
+        {
+          "id": "c4",
+          "nickname": "Grace",
+          "age": "5–8"
+        }
+      ],
+      "payment": null,
+      "createdAt": "2026-07-19",
+      "id": "p_murphy",
+      "name": "The Murphy family",
+      "contact": "Orla Murphy",
+      "email": "murphy@demo.ie",
+      "city": "Cork",
+      "area": "Douglas",
+      "address": "3 Maryborough Hill, Douglas, Cork T12 C3D4",
+      "about": "Two busy kids and two busy parents!"
+    },
+    {
+      "role": "parent",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "verified": {
+        "id": true,
+        "phone": true
+      },
+      "twoFactor": false,
+      "favourites": [],
+      "ratingSum": 24,
+      "ratingCount": 5,
+      "children": [
+        {
+          "id": "c5",
+          "nickname": "Jamie",
+          "age": "9–12"
+        }
+      ],
+      "payment": null,
+      "createdAt": "2026-07-19",
+      "id": "p_obrien",
+      "name": "The O'Brien family",
+      "contact": "Declan O'Brien",
+      "email": "obrien@demo.ie",
+      "city": "Cork",
+      "area": "Ballincollig",
+      "address": "22 Old Quarter, Ballincollig, Cork P31 E5F6",
+      "about": "One very energetic 9 year old."
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_sarah",
+      "name": "Sarah Kelly",
+      "email": "sarah@demo.ie",
+      "age": 24,
+      "city": "Cork",
+      "area": "Cork City",
+      "distanceKm": 1.2,
+      "experience": 6,
+      "rate": 16,
+      "ratingSum": 235.2,
+      "ratingCount": 48,
+      "studying": "Early Years graduate",
+      "about": "First aid certified and experienced with toddlers and school-age children. I love arts and crafts, bedtime stories and getting everyone to bed on time!",
+      "hue": 0
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_aoife",
+      "name": "Aoife Moran",
+      "email": "aoife@demo.ie",
+      "age": 20,
+      "city": "Cork",
+      "area": "Blackrock",
+      "distanceKm": 2.4,
+      "experience": 3,
+      "rate": 14.5,
+      "ratingSum": 148.8,
+      "ratingCount": 31,
+      "studying": "UCC · Primary Teaching",
+      "about": "Second year education student, eldest of five. Calm, patient and great with homework help.",
+      "hue": 1
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "5–8",
+        "9–12",
+        "13+"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_liam",
+      "name": "Liam Doyle",
+      "email": "liam@demo.ie",
+      "age": 22,
+      "city": "Cork",
+      "area": "Bishopstown",
+      "distanceKm": 3.1,
+      "experience": 2,
+      "rate": 13.5,
+      "ratingSum": 89.3,
+      "ratingCount": 19,
+      "studying": "MTU · Sports Science",
+      "about": "Football coach for under-10s. Best with school-age kids who love being outdoors.",
+      "hue": 2
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": false,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_ellie",
+      "name": "Ellie McGrath",
+      "email": "ellie@demo.ie",
+      "age": 21,
+      "city": "Cork",
+      "area": "Cork City",
+      "distanceKm": 0.9,
+      "experience": 4,
+      "rate": 14.15,
+      "ratingSum": 88.2,
+      "ratingCount": 18,
+      "studying": "UCC · Nutrition",
+      "about": "I'm a UCC student living in Cork and love spending time with kids. I'm available evenings and weekends around lectures.",
+      "hue": 3
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 3,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_niamh",
+      "name": "Niamh O'Sullivan",
+      "email": "niamh@demo.ie",
+      "age": 27,
+      "city": "Cork",
+      "area": "Douglas",
+      "distanceKm": 4,
+      "experience": 8,
+      "rate": 17.5,
+      "ratingSum": 316.8,
+      "ratingCount": 64,
+      "studying": "Early Years Educator (QQI Level 8)",
+      "about": "Infant and toddler specialist. Eight years in a crèche, now babysitting evenings and weekends.",
+      "hue": 1
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": true,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_ciara",
+      "name": "Ciara Byrne",
+      "email": "ciara@demo.ie",
+      "age": 17,
+      "city": "Cork",
+      "area": "Wilton",
+      "distanceKm": 1.8,
+      "experience": 1,
+      "rate": 12,
+      "ratingSum": 32.2,
+      "ratingCount": 7,
+      "studying": "Leaving Cert student",
+      "about": "Responsible 17 year old with lots of experience minding my younger cousins. Guardian consent on file.",
+      "hue": 0
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2024-12-16",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2024-12-16",
+          "expires": "2027-12-16"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2024-12-16",
+          "expires": "2027-12-16"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2024-12-06",
+          "expires": "2026-12-06"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_conor",
+      "name": "Conor Walsh",
+      "email": "conor@demo.ie",
+      "age": 23,
+      "city": "Cork",
+      "area": "Ballincollig",
+      "distanceKm": 2,
+      "experience": 4,
+      "rate": 15,
+      "ratingSum": 105.6,
+      "ratingCount": 22,
+      "studying": "UCC · Social Science",
+      "about": "Big brother of three, coach at the local GAA club. Patient and fun.",
+      "hue": 2
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-11-11",
+          "expires": null
+        },
+        "garda": {
+          "status": "pending",
+          "date": "2026-11-11"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-11-11",
+          "expires": "2029-11-10"
+        },
+        "firstAid": {
+          "status": "missing"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_sophie",
+      "name": "Sophie Lynch",
+      "email": "sophie@demo.ie",
+      "age": 19,
+      "city": "Cork",
+      "area": "Cork City",
+      "distanceKm": 1.5,
+      "experience": 1,
+      "rate": 13,
+      "ratingSum": 0,
+      "ratingCount": 0,
+      "studying": "UCC · Arts",
+      "about": "New to Aire!",
+      "hue": 3
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_roisin",
+      "name": "Róisín Kavanagh",
+      "email": "roisin@demo.ie",
+      "age": 22,
+      "city": "Dublin",
+      "area": "Rathmines",
+      "distanceKm": 1.4,
+      "experience": 5,
+      "rate": 15.5,
+      "ratingSum": 196,
+      "ratingCount": 40,
+      "studying": "TCD · Psychology",
+      "about": "Psychology student with five years of babysitting experience.",
+      "hue": 0
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2024-09-07",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2024-09-07",
+          "expires": "2027-09-07"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2024-09-07",
+          "expires": "2027-09-07"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2024-11-11",
+          "expires": "2026-11-11"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_jack",
+      "name": "Jack Brennan",
+      "email": "jack@demo.ie",
+      "age": 25,
+      "city": "Dublin",
+      "area": "Drumcondra",
+      "distanceKm": 2.6,
+      "experience": 3,
+      "rate": 14.5,
+      "ratingSum": 70.5,
+      "ratingCount": 15,
+      "studying": "DCU · Education",
+      "about": "Trainee teacher.",
+      "hue": 1
+    },
+    {
+      "role": "sitter",
+      "password": "h1cv3cdf",
+      "phone": "",
+      "seeded": true,
+      "autoRespond": true,
+      "availableNow": true,
+      "availability": {},
+      "ages": [
+        "0–1",
+        "2–4",
+        "5–8",
+        "9–12"
+      ],
+      "extraChild": 2,
+      "infantSurcharge": 2,
+      "verification": {
+        "id": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": null
+        },
+        "garda": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "childrenFirst": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2029-04-29"
+        },
+        "firstAid": {
+          "status": "verified",
+          "date": "2026-04-30",
+          "expires": "2028-04-29"
+        }
+      },
+      "subscription": {
+        "active": true,
+        "since": "2026-08-18"
+      },
+      "guardianConsent": false,
+      "payouts": [],
+      "createdAt": "2026-04-30",
+      "suspended": false,
+      "id": "s_emma",
+      "name": "Emma Nolan",
+      "email": "emma@demo.ie",
+      "age": 26,
+      "city": "Dublin",
+      "area": "Ranelagh",
+      "distanceKm": 3.3,
+      "experience": 7,
+      "rate": 16,
+      "ratingSum": 252.2,
+      "ratingCount": 52,
+      "studying": "Early Years graduate",
+      "about": "Former crèche room leader.",
+      "hue": 2
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b_cpjqgrr1tnx",
+      "createdAt": "2026-10-23T19:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_sarah",
+      "date": "2026-10-26",
+      "start": "19:00",
+      "end": "23:00",
+      "children": [
+        {
+          "nickname": "Ben",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 16,
+        "base": 64,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 72,
+        "fee": 7.2,
+        "ride": 0,
+        "total": 79.2,
+        "hourly": 18
+      }
+    },
+    {
+      "id": "b_6dyvncn1to1",
+      "createdAt": "2026-11-04T18:30:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_sarah",
+      "date": "2026-11-07",
+      "start": "18:30",
+      "end": "22:30",
+      "children": [
+        {
+          "nickname": "Ben",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 16,
+        "base": 64,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 72,
+        "fee": 7.2,
+        "ride": 0,
+        "total": 79.2,
+        "hourly": 18
+      }
+    },
+    {
+      "id": "b_6nevkyf1to1",
+      "createdAt": "2026-10-04T19:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_aoife",
+      "date": "2026-10-07",
+      "start": "19:00",
+      "end": "23:30",
+      "children": [
+        {
+          "nickname": "Ben",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4.5,
+        "rate": 14.5,
+        "base": 65.25,
+        "extra": 9,
+        "infant": 0,
+        "subtotal": 74.25,
+        "fee": 7.43,
+        "ride": 0,
+        "total": 81.68,
+        "hourly": 16.5
+      }
+    },
+    {
+      "id": "b_or23cc61to1",
+      "createdAt": "2026-09-14T14:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_liam",
+      "date": "2026-09-17",
+      "start": "14:00",
+      "end": "18:00",
+      "children": [
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 13.5,
+        "base": 54,
+        "extra": 0,
+        "infant": 0,
+        "subtotal": 54,
+        "fee": 5.4,
+        "ride": 0,
+        "total": 59.4,
+        "hourly": 13.5
+      }
+    },
+    {
+      "id": "b_review",
+      "createdAt": "2026-11-11T19:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_sarah",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "end": "23:00",
+      "children": [
+        {
+          "nickname": "Ben",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 16,
+        "base": 64,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 72,
+        "fee": 7.2,
+        "ride": 0,
+        "total": 79.2,
+        "hourly": 18
+      }
+    },
+    {
+      "id": "b_upcoming",
+      "createdAt": "2026-11-17T19:00:00.000Z",
+      "uber": true,
+      "notes": "Ben has a bedtime story at 7:30. Lucy can stay up until 8:30.",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_odonnell",
+      "sitterId": "s_sarah",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "end": "23:00",
+      "children": [
+        {
+          "nickname": "Ben",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Lucy",
+          "age": "5–8"
+        }
+      ],
+      "status": "confirmed",
+      "price": {
+        "hours": 4,
+        "rate": 16,
+        "base": 64,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 72,
+        "fee": 7.2,
+        "ride": 14,
+        "total": 93.2,
+        "hourly": 18
+      }
+    },
+    {
+      "id": "b_request",
+      "createdAt": "2026-11-16T19:20:18.097Z",
+      "uber": false,
+      "notes": "Younger child has a peanut allergy. Bedtime is 8 pm.",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_murphy",
+      "sitterId": "s_ellie",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "end": "23:00",
+      "children": [
+        {
+          "nickname": "Tom",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Grace",
+          "age": "5–8"
+        }
+      ],
+      "status": "pending",
+      "price": {
+        "hours": 4,
+        "rate": 14.15,
+        "base": 56.6,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 64.6,
+        "fee": 6.46,
+        "ride": 0,
+        "total": 71.06,
+        "hourly": 16.15
+      }
+    },
+    {
+      "id": "b_job",
+      "createdAt": "2026-11-14T18:00:00.000Z",
+      "uber": false,
+      "notes": "Jamie can have one hour of screen time.",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_obrien",
+      "sitterId": "s_ellie",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "end": "22:00",
+      "children": [
+        {
+          "nickname": "Jamie",
+          "age": "9–12"
+        }
+      ],
+      "status": "confirmed",
+      "price": {
+        "hours": 4,
+        "rate": 14.15,
+        "base": 56.6,
+        "extra": 0,
+        "infant": 0,
+        "subtotal": 56.6,
+        "fee": 5.66,
+        "ride": 0,
+        "total": 62.26,
+        "hourly": 14.15
+      }
+    },
+    {
+      "id": "b_5rddiq31to1",
+      "createdAt": "2026-11-03T19:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_murphy",
+      "sitterId": "s_ellie",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "end": "23:00",
+      "children": [
+        {
+          "nickname": "Tom",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Grace",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 14.15,
+        "base": 56.6,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 64.6,
+        "fee": 6.46,
+        "ride": 0,
+        "total": 71.06,
+        "hourly": 16.15
+      }
+    },
+    {
+      "id": "b_zastx571to1",
+      "createdAt": "2026-10-27T17:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": true,
+      "reviewedBySitter": false,
+      "parentId": "p_obrien",
+      "sitterId": "s_ellie",
+      "date": "2026-10-30",
+      "start": "17:00",
+      "end": "21:00",
+      "children": [
+        {
+          "nickname": "Jamie",
+          "age": "9–12"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 14.15,
+        "base": 56.6,
+        "extra": 0,
+        "infant": 0,
+        "subtotal": 56.6,
+        "fee": 5.66,
+        "ride": 0,
+        "total": 62.26,
+        "hourly": 14.15
+      }
+    },
+    {
+      "id": "b_7lrd1hb1to1",
+      "createdAt": "2026-10-20T19:30:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_murphy",
+      "sitterId": "s_ellie",
+      "date": "2026-10-23",
+      "start": "19:30",
+      "end": "23:30",
+      "children": [
+        {
+          "nickname": "Tom",
+          "age": "2–4"
+        },
+        {
+          "nickname": "Grace",
+          "age": "5–8"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 4,
+        "rate": 14.15,
+        "base": 56.6,
+        "extra": 8,
+        "infant": 0,
+        "subtotal": 64.6,
+        "fee": 6.46,
+        "ride": 0,
+        "total": 71.06,
+        "hourly": 16.15
+      }
+    },
+    {
+      "id": "b_o9hh8lr1to1",
+      "createdAt": "2026-10-13T18:00:00.000Z",
+      "uber": false,
+      "notes": "",
+      "reviewedByParent": false,
+      "reviewedBySitter": false,
+      "parentId": "p_obrien",
+      "sitterId": "s_ellie",
+      "date": "2026-10-16",
+      "start": "18:00",
+      "end": "21:00",
+      "children": [
+        {
+          "nickname": "Jamie",
+          "age": "9–12"
+        }
+      ],
+      "status": "completed",
+      "price": {
+        "hours": 3,
+        "rate": 14.15,
+        "base": 42.45,
+        "extra": 0,
+        "infant": 0,
+        "subtotal": 42.45,
+        "fee": 4.25,
+        "ride": 0,
+        "total": 46.7,
+        "hourly": 14.15
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r_1rzj5eq1to1",
+      "bookingId": "b_cpjqgrr1tnx",
+      "by": "parent",
+      "sitterId": "s_sarah",
+      "parentId": "p_odonnell",
+      "stars": 5,
+      "text": "Sarah was brilliant. The kids were asleep when we got home and the house was tidier than we left it!",
+      "date": "2026-10-26"
+    },
+    {
+      "id": "r_46ynww61to1",
+      "bookingId": "b_6dyvncn1to1",
+      "by": "parent",
+      "sitterId": "s_sarah",
+      "parentId": "p_odonnell",
+      "stars": 5,
+      "text": "Always on time and the kids adore her.",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "r_u6omm5h1to1",
+      "bookingId": "b_6nevkyf1to1",
+      "by": "parent",
+      "sitterId": "s_aoife",
+      "parentId": "p_odonnell",
+      "stars": 5,
+      "text": "Really lovely, helped Lucy with her reading.",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "r_emhysse1to1",
+      "bookingId": "b_or23cc61to1",
+      "by": "parent",
+      "sitterId": "s_liam",
+      "parentId": "p_odonnell",
+      "stars": 4,
+      "text": "Great with Lucy, lots of football in the garden.",
+      "date": "2026-09-17"
+    },
+    {
+      "id": "r_318a4vi1to1",
+      "bookingId": "b_5rddiq31to1",
+      "by": "parent",
+      "sitterId": "s_ellie",
+      "parentId": "p_murphy",
+      "stars": 5,
+      "text": "Ellie was fantastic, will definitely book again.",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "r_ns91v2i1to1",
+      "bookingId": "b_zastx571to1",
+      "by": "parent",
+      "sitterId": "s_ellie",
+      "parentId": "p_obrien",
+      "stars": 5,
+      "text": "Jamie loved her!",
+      "date": "2026-10-30"
+    }
+  ],
+  "messages": {
+    "b_upcoming": [
+      {
+        "id": "m_jhh8l0y1to1",
+        "from": "s_sarah",
+        "text": "Hi Sally! Looking forward to minding Ben and Lucy again. Anything new I should know?",
+        "at": "2026-11-15T17:38:18.097Z"
+      },
+      {
+        "id": "m_nlzbjjv1to1",
+        "from": "p_odonnell",
+        "text": "Hi Sarah! All the same as last time. Thanks a million 😊",
+        "at": "2026-11-15T18:38:18.097Z"
+      }
+    ]
+  },
+  "notifications": [
+    {
+      "id": "n_48zigqb1to1",
+      "userId": "p_odonnell",
+      "icon": "check",
+      "text": "Sitter found: Sarah K. can mind your children on {{2026-11-20}}, 7 pm.",
+      "link": "#/booking/b_upcoming",
+      "read": false,
+      "at": "2026-11-15T23:38:18.097Z"
+    },
+    {
+      "id": "n_dmwbj1f1to1",
+      "userId": "p_odonnell",
+      "icon": "star",
+      "text": "How did Sarah K. get on? Leave a rating for your last booking.",
+      "link": "#/booking/b_review",
+      "read": false,
+      "at": "2026-11-15T13:38:18.097Z"
+    },
+    {
+      "id": "n_010ckpc1to1",
+      "userId": "s_ellie",
+      "icon": "bell",
+      "text": "New request: The Murphy family, {{2026-11-19}}, 7–11 pm.",
+      "link": "#/booking/b_request",
+      "read": false,
+      "at": "2026-11-16T19:20:18.097Z"
+    }
+  ],
+  "reports": []
+}
